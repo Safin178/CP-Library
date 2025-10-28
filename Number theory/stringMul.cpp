@@ -18,7 +18,3 @@ string mul(string n1, string n2)
   }
   return product[0] == '0' ? product.substr(1) : product;
 }
-// ok
-// nooo
-// she
-// congratse
