@@ -17,4 +17,4 @@ inline ll modAdd(ll a, ll b) { return MOD(MOD(a) + MOD(b)); }
 inline ll modSub(ll a, ll b) { return MOD(MOD(a) - MOD(b)); }
 inline ll modMul(ll a, ll b) { return MOD(MOD(a) * MOD(b)); }
 inline ll modInv(ll a) { return bin_exp(a, mod2 - 2); } // buji na
-// this mod is bit slow, ans %= mod(slow) or ans -= ans / mod * mod
+// this mod is bit slow, use `ans -= ans / mod * mod` instead of `ans %= mod`
