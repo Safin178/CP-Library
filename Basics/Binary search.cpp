@@ -33,5 +33,5 @@ a.begin();
     } 
     cout << r << endl; 
     cout << upper_bound(a.begin(), a.end(), x) - 
-a.begin() << endl; 
+a.begin() << endl; // new life
 */ 
