@@ -1,6 +1,19 @@
-#include <bits/stdc++.h>
-using namespace std;
-typedef long long int ll;
+/**
+ * Author: 
+ * Date: 2025-11-14
+ * License: CC0
+ * Source: 
+ * Description: Precomputes Number of Divisors (NOD) and Sum of Divisors (SOD) 
+ *  for all numbers up to nmax using a modified sieve. Then prints tau(n) 
+ *  and sigma(n) for a given n.
+ * Usage:
+ *  sieve();
+ *  cout << NOD[100] << " " << SOD[100];
+ * Time: O(N log N)
+ * Memory: O(N)
+ * Status: 
+ */
+#pragma once
 
 const int nmax = 1e5 + 10;
 
@@ -23,7 +36,7 @@ int main(){
     cout.tie(NULL);
 
     sieve();
-//
+
     ll n = 100;
 
     cout<<"tau "<<NOD[n]<<endl;
