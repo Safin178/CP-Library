@@ -11,7 +11,7 @@ ll bin_exp(ll a, ll n) //O(log(n))
   return r;
 }
 
-const int mod2 = 1e9 + 7;
+const int mod2 = 1e9 + 7; // faster if const
 inline ll MOD(ll a){ return (a % mod2 + mod2) % mod2; }
 inline ll modAdd(ll a, ll b) { return MOD(MOD(a) + MOD(b)); }
 inline ll modSub(ll a, ll b) { return MOD(MOD(a) - MOD(b)); }
