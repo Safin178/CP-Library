@@ -11,10 +11,13 @@ ll bin_exp(ll a, ll n) //O(log(n))
   return r;
 }
 
-const int mod2 = 1e9 + 7;
+const int mod2 = 1e9 + 7; // faster if const
 inline ll MOD(ll a){ return (a % mod2 + mod2) % mod2; }
 inline ll modAdd(ll a, ll b) { return MOD(MOD(a) + MOD(b)); }
 inline ll modSub(ll a, ll b) { return MOD(MOD(a) - MOD(b)); }
 inline ll modMul(ll a, ll b) { return MOD(MOD(a) * MOD(b)); }
 inline ll modInv(ll a) { return bin_exp(a, mod2 - 2); } // buji na
 // this mod is bit slow, use `ans -= ans / mod * mod` instead of `ans %= mod`
+
+
+//binary exponentiation
