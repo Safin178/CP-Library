@@ -38,7 +38,7 @@ while(l<=r)
     cout << upper_bound(a.begin(), a.end(), x) - a.begin() << endl;
 
 
-
+! binary search on fraction
 #include <bits/stdc++.h>
 using namespace std;
 #define ll long long
@@ -46,7 +46,7 @@ using namespace std;
 void solve() {
 
     double lo=0, hi=2e18;
-    int it=100;
+    int it=100;     // eta 100 porjontw chalale enough
     while(it--){
         double mid=(lo + hi)/2;
                 
@@ -55,7 +55,6 @@ void solve() {
         if( /*condition*/ ) hi=mid;
         else lo=mid;
     }
-    
     cout << fixed << setprecision(12) << hi << '\n';
 }
 
