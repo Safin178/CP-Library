@@ -23,3 +23,5 @@ bool isPrime(int num)
 {
     return num > 1 && (num == 2 || ((num & 1) && !on(num)));
 }
+
+// memory efficient er jonno ei sieve
