@@ -91,4 +91,6 @@ int32_t main() {
   for (auto x: ans) cout << x << ' '; cout << '\n';
   return 0;
 }
-// https://judge.yosupo.jp/problem/enumerate_primes
+
+// source link: https://github.com/ShahjalalShohag/code-library/blob/main/Number%20Theory/Sieve%20upto%201e9.cpp
+//  https://judge.yosupo.jp/problem/enumerate_primes
