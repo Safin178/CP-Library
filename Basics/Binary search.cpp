@@ -1,3 +1,5 @@
+
+! binary search normal
 int l = 0,r = n; 
 while(l<=r) 
 { 
@@ -8,9 +10,9 @@ while(l<=r)
     } 
     else if(x<a[m]) r = m-1; 
     else l=m+1; 
-} 
-! Lower bound: maximum index which in not greater 
-than X / first jekhane X insert kora jabe 
+}
+
+! Lower bound: maximum index which in not greater than X / first jekhane X insert kora jabe 
     int l = -1; //a[l]<=x 
     int r = n; //a[r]>x 
     while (l + 1 < r) 
@@ -20,8 +22,9 @@ than X / first jekhane X insert kora jabe
         else l = m; 
     } 
     cout << r << endl; 
-    cout << lower_bound(a.begin(), a.end(), x) - 
-a.begin(); 
+    cout << lower_bound(a.begin(), a.end(), x) - a.begin(); 
+
+
 ! Upper bound: minimum index which in not less than X / last jekhane X insert kora jabe 
     int l = -1; //a[l]<x 
     int r = n; //a[r]>=x 
