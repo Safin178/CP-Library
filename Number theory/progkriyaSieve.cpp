@@ -23,3 +23,5 @@ void sieve(int n)
         }
     }
 }
+
+// from book
