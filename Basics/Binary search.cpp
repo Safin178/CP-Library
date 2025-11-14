@@ -35,6 +35,35 @@ while(l<=r)
         else l = m; 
     } 
     cout << r << endl; 
-    cout << upper_bound(a.begin(), a.end(), x) - 
-a.begin() << endl; // new life
-*/ 
+    cout << upper_bound(a.begin(), a.end(), x) - a.begin() << endl;
+
+
+
+#include <bits/stdc++.h>
+using namespace std;
+#define ll long long
+
+void solve() {
+
+    double lo=0, hi=2e18;
+    int it=100;
+    while(it--){
+        double mid=(lo + hi)/2;
+                
+        //! work here
+
+        if( /*condition*/ ) hi=mid;
+        else lo=mid;
+    }
+    
+    cout << fixed << setprecision(12) << hi << '\n';
+}
+
+int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+
+    // int t; cin >> t;
+    // while (t--) 
+    solve();
+}
