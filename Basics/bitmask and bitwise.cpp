@@ -30,6 +30,10 @@ ll togl(ll n, ll k){
 } 
 bool is_set(ll n, ll k){ 
     return (n & (1LL << k)); 
-} 
+}
+
+bool is_power_of_2(ll n){
+  return (n>0 && !(n&(n-1)));
+}
 
 
