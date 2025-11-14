@@ -6,6 +6,8 @@
  Time: O(sqrt(a));
 */
 
+#define rep(i,x,n) for(int i=x; i<n; i++)
+
 ll modLog(ll a, ll b, ll m)
 {
     ll n = (ll)sqrt(m) + 1, e = 1, f = 1, j = 1;
