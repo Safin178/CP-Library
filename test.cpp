@@ -98,11 +98,18 @@ int dateToInt(int y, int m, int d) {
     3 * ((y + 4900 + (m - 14) / 12) / 100) / 4 +
     d - 32075; 
 }
+mt19937_64 rng(chrono::steady_clock::now().time_since_epoch().count());
+inline ll gen_random(ll l, ll r){
+return uniform_int_distribution<ll>(l, r)(rng);
+}
+// gen_random(l, r); //
+// shuffle(all(v), rng); // shuffle fun()
 void solve(){
   // ll n; cin >> n;  vl v(n); forcin(v);
 
   int x = dateToInt(2025,11,17);
   cout << intToDay(x) << nl;
+  cout << gen_random(1, 1000);
     
      
 
