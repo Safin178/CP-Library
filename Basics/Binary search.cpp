@@ -45,17 +45,17 @@ using namespace std;
 
 void solve() {
 
-    double lo=0, hi=2e18;
+    long double lo=0, hi=2e18;
     int it=100;     // eta 100 porjontw chalale enough
     while(it--){
-        double mid=(lo + hi)/2;
+        long double mid=(lo + hi)/2.0;
                 
         //! work here
 
         if( /*condition*/ ) hi=mid;
         else lo=mid;
     }
-    cout << fixed << setprecision(12) << hi << '\n';
+    cout << fixed << setprecision(12) << hi << '\n'; // set_pre o use kora jai
 }
 
 int main() {

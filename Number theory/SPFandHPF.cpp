@@ -23,3 +23,28 @@ also for factorize
 //     }
 //   }
 // }
+
+int const MAXN = (int)1e7 + 5;
+vector<int> spf(MAXN + 1, 1);
+void sieve()
+{
+    spf[0] = 0;
+    for (int i = 2; i <= MAXN; i++) {
+        if (spf[i] == 1) { 
+            for (int j = i; j <= MAXN; j += i) {
+                if (spf[j]== 1)
+                    spf[j] = i;
+            }
+        }
+    }
+}
+
+vector<int> getFactorization(int x) // with spf
+{
+    vector<int> ret;
+    while (x != 1) {
+        ret.push_back(spf[x]);
+        x = x / spf[x];
+    }
+    return ret;
+}
