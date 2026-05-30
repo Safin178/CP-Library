@@ -72,3 +72,12 @@ struct hash_pair {
         return h1 ^ (h2 << 1ll);
     }
 };
+
+// ! tested for gp_hash_table , gp_hash_table<pll,ll, hash_pair> m;
+// better than unordered map + fast 
+// include pbds headers
+struct hash_pair {
+    size_t operator()(const pll& p) const {
+        return p.first ^ (p.second << 1);
+    }
+};
