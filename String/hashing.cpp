@@ -60,3 +60,15 @@ struct Hashing {
         return ret;
     }
 };
+
+// ! For unordered_map to avoid tle , unordered_map<pll,ll, hash_pair> m 
+// ! avg O(1) find , insert 
+ 
+struct hash_pair {
+    template <class T1, class T2>
+    size_t operator()(const pair<T1, T2>& p) const {
+        auto h1 = hash<T1>{}(p.first);
+        auto h2 = hash<T2>{}(p.second);
+        return h1 ^ (h2 << 1ll);
+    }
+};
