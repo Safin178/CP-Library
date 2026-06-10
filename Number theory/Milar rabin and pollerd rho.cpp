@@ -224,3 +224,4 @@ int main()
 
     return 0;
 }
+// https://toph.co/p/a-gre-themed-contest-problem
