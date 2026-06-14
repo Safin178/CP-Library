@@ -1,5 +1,5 @@
 /// use upper_bound for non decreasing order
-int lis() { // will return max length
+int lis() { // will return max length,  nlogn
 	vector<int> dp ;
 	for(int i=0; i<lim; i++) {
 		auto it=lower_bound(dp.begin(),dp.end(),arr[i]) ;
@@ -10,8 +10,8 @@ int lis() { // will return max length
 }
 
 
-
-void lis_print()
+lim hocce vector er size
+void lis_print(int lim)
 {
 	vector<int> dp;
 
